@@ -1,25 +1,111 @@
 <!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Member Club</title>
-</head>
-<body>
-    <header class="header">
-        <img src="./src/assets/Logo.png" alt="Member Club" class="logo">
-        <nav>
-            <div class="search">
-                <input type="text" id="search-client" placeholder="ID do cartão" required>
-                <button type="submit" class="search-button">
-                    <i class="ph ph-arrow-elbow-down-left"></i>
-                </button>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./src/assets/scissors.svg" />
+
+    <title>Members Club</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="./src/assets/logo.svg" alt="Logo" class="logo" />
+
+        <form class="form">
+          <input id="search" type="text" placeholder="Buscar cliente" class="search" />
+          <button id="submit-button" type="submit" class="button blocked">
+            <!-- <img src="./src/assets/IconArrowElbowDownLeft.svg" alt="Icon Enter"  /> -->
+             <span>Enter icon</span>
+            <!-- Adicionar cliente -->
+          </button>
+        </form>
+      </header>
+
+      <div class="content hidden">
+        <aside id="account" class="account">
+          <!-- Exemplo  -->
+
+          <!-- <section id="account-info" class="account-info">
+            <div class="avatar">
+              <div class="avatar-container">
+                <img sBorc="https://avatar.iran.liara.run/public" alt="Avatar" />
+              </div>
             </div>
-        </nav>
-    </header>
-</body>
+
+            <div>
+              <h2 class="title-sm">Natália Miranda</h2>
+              <p class="text-xs">Cliente desde <span>18/09/2023</span></p>
+            </div>
+          </section> -->
+
+          <section id="discount-history" class="discount-history">
+            <header>
+              <h3 class="subtitle-sm gray-500">Histórico</h3>
+              <!-- <p class="text-xs gray-500">7 cortes</p> -->
+            </header>
+            <ul id="coupon-history" class="coupon-history">
+              <!-- Exemplo  -->
+              <!-- <li class="coupon-info">
+                <div>
+                  <strong class="subtitle-sm gray-600">29/04/2024</strong>
+                  <span class="text-xs gray-500">18:30</span>
+                </div>
+                <div>
+                  <img
+                    src="./src/assets/IconSealCheck.svg"
+                    alt="Sealed Coupon"
+                    class="check-icon"
+                  />
+                  <span>Check icon</span>
+                </div>
+              </li> -->
+            </ul>
+          </section>
+        </aside>
+
+        <main class="card">
+          <section id="loyalty-card" class="loyalty-card">
+            <header>
+              <div>
+                <h3 class="subtitle-sm gray-500">Cartão fidelidade</h3>
+                <p class="text-sm gray-500">Ao fazer cortes de cabelo, o décimo sai de graça!</p>
+              </div>
+
+              <!-- <p class="member-id subtitle-sm">ID: 124-537-835-230</p> -->
+            </header>
+            <ul class="coupon-list">
+              <!-- <li class="coupon">
+                <img src="./src/assets/PinCheck.png" alt="Pin Check" />
+              </li> -->
+            </ul>
+          </section>
+
+          <section id="status" class="status">
+            <div>
+              <p class="status-text">
+                <!-- <span class="title-md">5</span> cortes restantes -->
+              </p>
+              <div class="progress-bar-container">
+                <div class="progress-bar">
+                  <div id="progress" class="progress"></div>
+                </div>
+                <!-- <p class="text-xs gray-500">5 de 10</p> -->
+              </div>
+            </div>
+            <div class="loyalty-image">
+              <img src="./src/assets/PinGift.png" alt="Pin Gift" />
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <!-- Modal -->
+  </body>
 </html>

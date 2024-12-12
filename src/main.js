@@ -1,7 +1,9 @@
-"use strict";
 
-// CSS
-import './styles/globals.css';
-import './styles/colors.css';
-import './styles/typography.css';
-import './styles/header.css';
+// Importing styles
+import './styles/utils.css'
+import './styles/global.css'
+import './styles/modal.css'
+
+import './modules/form/search.js'
+import './modules/form/input.js'
+import './modules/page/load-default.js'

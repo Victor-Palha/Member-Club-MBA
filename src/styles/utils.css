@@ -1,0 +1,105 @@
+
+.pink {
+  color: var(--pink);
+}
+
+.green {
+  color: var(--green);
+}
+
+.gray-700 {
+  color: var(--gray-700);
+}
+
+.gray-600 {
+  color: var(--gray-600);
+}
+
+.gray-500 {
+  color: var(--gray-500);
+}
+
+.gray-400 {
+  color: var(--gray-400);
+}
+
+.gray-300 {
+  color: var(--gray-300);
+}
+
+.gray-200 {
+  color: var(--gray-200);
+}
+
+.gray-100 {
+  color: var(--gray-100);
+}
+
+.gradient-base {
+  background: linear-gradient(90deg, #2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%);
+}
+
+
+.title-md {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 140%;
+}
+
+.title-sm {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 140%;
+}
+
+.subtitle-md {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+.subtitle-sm {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+.text-md {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 140%;
+}
+
+.text-sm {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 140%;
+}
+
+.text-xs {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 140%;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.loading {
+  opacity: 0.5;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.blocked {
+  cursor: not-allowed;
+}
+
+.active {
+  opacity: 1;
+}
