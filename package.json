@@ -1,0 +1,20 @@
+{
+  "name": "member-club",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3001",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.21"
+  },
+  "devDependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
