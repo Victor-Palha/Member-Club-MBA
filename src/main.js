@@ -1,4 +1,6 @@
 "use strict";
 
 // CSS
-// import './styles/styles.css';
+import './styles/globals.css';
+import './styles/colors.css';
+import './styles/typography.css';
